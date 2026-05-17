@@ -7,10 +7,11 @@
 
 for package in $@
  do 
-   if [$? ne 0]
+   if [$? -ne 0]
     then
      echo "package not installed please install it"
           dnf install $package -y
+          VALIDATE $? installing $package
    else
     echo "this package already exists"
  done  
