@@ -7,7 +7,11 @@
 
 for package in $@
  do 
-  echo $package
+  if $package ne 0
+  echo "package not installed please install it"
+       "dnf install $package -y"
+      else
+    echo "this package already exists"
  done  
   
 
