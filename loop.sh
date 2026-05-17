@@ -8,7 +8,7 @@
 for package in $@
  do 
    if [$? ne 0]
-   then
+    then
      echo "package not installed please install it"
           dnf install $package -y
    else
