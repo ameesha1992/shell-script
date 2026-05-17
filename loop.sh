@@ -5,3 +5,9 @@ for i in {1..9}
 
   done  
 
+for package in $@
+ do 
+  echo $package
+ done  
+  
+
