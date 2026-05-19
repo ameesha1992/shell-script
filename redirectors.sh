@@ -7,7 +7,7 @@ mkdir -p $LOGS_FOLDER
 
 USAGE(){
    echo "USAGE:: sudo su redirectors.sh package1 package2.."
-
+    exit 1
 }
 
   for package in $@ 
