@@ -6,16 +6,16 @@
 #   done  
 
 for package in $@
- 
+ do
    dnf list installed $package
    if [ $? -ne 0 ]
-    then
+   then
      echo "package not installed please install it"
           dnf install $package -y
           VALIDATE $? "installing package"   
-     else
+   else
      echo "this package already exists"
    fi
- 
+ done
   
 
