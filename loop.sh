@@ -15,6 +15,7 @@ for package in $@
           VALIDATE $? "installing package"   
    else
      echo "this package already exists"
+     fi
  done  
   
 
